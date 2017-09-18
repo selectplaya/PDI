@@ -1,1 +1,18 @@
+<<<<<<< HEAD
 
+=======
+.idea
+node_modules
+jspm_packages
+npm-debug.log
+debug.log
+src/**/*.js
+!src/systemjs.config.extras.js
+!src/systemjs.config.js
+!src/systemjs-angular-loader.js
+*.js.map
+e2e/**/*.js
+e2e/**/*.js.map
+_test-output
+_temp
+>>>>>>> 9290e596bf6692e42e214c377cf72f59bf88aeb6
