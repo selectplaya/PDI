@@ -1,7 +1,6 @@
 // public/core.js
-
 var scotchTodo = angular.module('scotchTodo', []);
-
+//module.exports = scotchTodo;
 function mainController($scope, $http) {
     $scope.formData = {};
 

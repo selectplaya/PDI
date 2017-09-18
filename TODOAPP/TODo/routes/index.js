@@ -1,20 +1,19 @@
 var express = require('express');
-var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express tim' });
-});
-
-module.exports = router;
-
-
-//var express  = require('express');
 var app      = express();                               // create our app w/ express
+var router = express.Router();
 var mongoose = require('mongoose');                     // mongoose for mongodb
 var morgan = require('morgan');             // log requests to the console (express4)
 var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
+
+/* GET home page. */
+// router.get('/', function(req, res, next) {
+//   res.render('index', { title: 'Express tim' });
+// });
+
+module.exports = router;
+
 
 
     // configuration =================
@@ -95,5 +94,5 @@ mongoose.connect('mongodb://localhost/test');     // connect to mongoDB database
 
 
     // listen (start app with node server.js) ======================================
-    app.listen(8080);
+  var server=  app.listen(8080);
     console.log("App listening on port 8080");
